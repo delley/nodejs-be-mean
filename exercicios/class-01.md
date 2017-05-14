@@ -40,16 +40,21 @@ module.exports = leituraSync;
 ## 2. Como o V8 executa JavaScript? Demonstre 1 exemplo com código ou imagem.
 
 
-3. Qual a diferença entre um sistema single para um multi-thread?
+
+## 3. Qual a diferença entre um sistema single para um multi-thread?
 
 
-4. Como a Thread Pool tem um tamanho padrão de 4, o que acontece se você enviar 5 requisições ao banco?
+## 4. Como a Thread Pool tem um tamanho padrão de 4, o que acontece se você enviar 5 requisições ao banco?
 
 
-5. Como você venderia o peixe do Node.js na sua empresa para tentar convencer seu chefe da sua adoção?
+## 5. Como você venderia o peixe do Node.js na sua empresa para tentar convencer seu chefe da sua adoção?
 
 
-6. Qual a versão do seu `node`?
+## 6. Qual a versão do seu `node`?
 
 
-7. Qual a versão do seu `npm`?
+## 7. Qual a versão do seu `npm`?
+
+## referências
+
+* [Node.Js - Assíncrono Node.js](http://nodejsunijorge.blogspot.com.br/2012/11/arquitetura-do-nodejs.html)
