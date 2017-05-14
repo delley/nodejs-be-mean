@@ -5,7 +5,7 @@
 
 ## 1. Explique como um processo síncrono e assíncrono roda no Node.js, dê um exemplo para cada.
 
-Uma das principais caracteristicas no Node.js é executar processos de forma `assíncrona`. No Node.js, um processo `assíncrono` é baseado em eventos. A função é chamada junto com um parâmetro de `callback` (função de retorno), entra no ciclo do `event loop` e posteriormente é repassada ao `Thread Pool` para que o `event loop` continue o ciclo sem paralizar o sistema. Ao final do processamento, a função `callback` é chamada.
+Uma das principais caracteristicas no Node.js é executar processos de forma `assíncrona`. No Node.js, um processo `assíncrono` é baseado em eventos. A função é chamada junto com um parâmetro de `callback` (função de retorno), entra no ciclo do `event loop` e posteriormente é repassada ao `Thread Pool` para que o `event loop` continue o ciclo sem bloquear o sistema. Ao final do processamento, a função `callback` é chamada.
 
 ### Exemplo assíncrono
 
@@ -16,18 +16,28 @@ var leituraAsync = function(arquivo){
   var inicio = new Date().getTime();
   fs.readFile(arquivo);
   var fim = new Date().getTime();
-  console.log("Bloqueio assíncrono: "+(fim - inicio)+ "ms");
+  console.log("Bloqueio assíncrono: " + (fim - inicio) + "ms");
 };
 module.exports = leituraAsync;
 ```
 
+Já um processo `síncrono` no Node.js, bloqueia o sistema até que todo o processamento seja finalizado.
 
+### Exemplo síncrono
 
-O processo `síncrono` vai paralizar o sistema inteiro até ser executado. Seria como as pessoas subindo num carrossel, cada um por vez. E o carrossel tem que parar cada vez.
+```js
+var fs = require('fs');
+var leituraSync = function(arquivo){
+  console.log("Fazendo leitura síncrona");
+  var inicio = new Date().getTime();
+  fs.readFileSync(arquivo);
+  var fim = new Date().getTime();
+  console.log("Bloqueio síncrono: " + (fim - inicio) + "ms");
+};
+module.exports = leituraSync;
+```
 
-
-
-2. Como o V8 executa JavaScript? Demonstre 1 exemplo com código ou imagem.
+## 2. Como o V8 executa JavaScript? Demonstre 1 exemplo com código ou imagem.
 
 
 3. Qual a diferença entre um sistema single para um multi-thread?
