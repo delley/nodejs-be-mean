@@ -57,4 +57,4 @@ module.exports = leituraSync;
 
 ## referências
 
-* [Node.Js - Assíncrono Node.js](http://nodejsunijorge.blogspot.com.br/2012/11/arquitetura-do-nodejs.html)
+* [Node.js - Assíncrono Node.js](http://nodejsunijorge.blogspot.com.br/2012/11/arquitetura-do-nodejs.html)
