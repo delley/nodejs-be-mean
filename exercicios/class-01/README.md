@@ -39,11 +39,11 @@ module.exports = leituraSync;
 
 ## 2. Como o V8 executa JavaScript? Demonstre 1 exemplo com código ou imagem.
 
+O V8 é a engine criada pela *Google* para ser usada em seu navegador *Chrome*. Em 2008 a *Google* abriu o código do V8, o que possibilitou que a comunidade entendesse a *engine* e compreendesse como o JavaScript é interpretado e compilado. Isso mesmo, o V8 é responsável por compilar o código JavaScript para linguagem de máquina, otimizar sua execução usando heurísticas, permitindo assim, que a execução seja feita em cima do código compilado e não do código interpretado.
+
 ![](nodejs-system.svg.png)
 
-O V8 é a engine criada pela *Google* para ser usada em seu navegador *Chrome*. Em 2008 a *Google* abriu o código do V8, o que possibilitou que a comunidade entendesse a *engine* e compreendesse como o JavaScript é interpretado e compilado.
-
-O V8 é responsável por compilar o código JavaScript para linguagem de máquina, otimizar sua execução usando heurísticas, permitindo que a execução seja feita em cima do código compilado e não do código interpretado.
+De acordo com a figura acima, podemos resumir o fluxo de execução no seguinte: A partir de uma instrução enviada pela aplicação, o V8 compila e otimiza o código JavaScript. Em seguinda, a instrução é repassa para a API do Node.js, que se encarrega de entregá-la, por meio de instruções do SO, a LIBUV. Já na LIBUV, inicia-se o ciclo de execução, onde a instrução é colocada na na *Event Queue* e aguarda até que o *Event Loop* a retire e a entregue as *Works Threads* para a execução. Terminada a execução, as *Works Threads* entregam ao *Event Loop* a execução do *callback*, que é colocada na *Event Queue* e o ciclo de execução se repete. Finalizado o ciclo de execução da LIBUV, o resultado é devolvido a API do Node.js, que devolve ao V8 e finalmente a aplicação que enviou a instrução.   
 
 ## 3. Qual a diferença entre um sistema single para um multi-thread?
 
