@@ -21,7 +21,7 @@ var leituraAsync = function(arquivo){
 module.exports = leituraAsync;
 ```
 
-Já um processo `síncrono` no Node.js, bloqueia o sistema até que todo o processamento seja finalizado.
+Já um processo `síncrono` no Node.js, bloqueia o sistema até que todo o processamento seja finalizado. Como pode ser visto no exemplo abaixo, as funções síncronas no Node.js possuem o sufixo `Sync`.
 
 ### Exemplo síncrono
 
