@@ -39,7 +39,11 @@ module.exports = leituraSync;
 
 ## 2. Como o V8 executa JavaScript? Demonstre 1 exemplo com código ou imagem.
 
+![](nodejs-system.svg.png)
 
+O V8 é a engine criada pela *Google* para ser usada em seu navegador *Chrome*. Em 2008 a *Google* abriu o código do V8, o que possibilitou que a comunidade entendesse a *engine* e compreendesse como o JavaScript é interpretado e compilado.
+
+O V8 é responsável por compilar o código JavaScript para linguagem de máquina, otimizar sua execução usando heurísticas, permitindo que a execução seja feita em cima do código compilado e não do código interpretado.
 
 ## 3. Qual a diferença entre um sistema single para um multi-thread?
 
