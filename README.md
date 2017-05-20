@@ -2,7 +2,7 @@
 
 Arquivos do módulo Node.JS do curso [Be MEAN](https://github.com/Webschool-io/be-mean) disponibilizado gratuitamente pela galera da [WebSchool.io](http://webschool.io/).
 
-## descrição do curos
+## descrição do curso
 > Curso voltado a ensinar o STACK conhecido como MEAN (MongoDb, Express, Angular e Node.js) e muitas outras tecnologias que utilizam JavaScript. Onde você se formará um desenvolvedor FULLSTACK!!!
 
 ## Links para os materiais do curso
