@@ -1,4 +1,4 @@
-# Node.js - Aula 01 - Exercício
+# Node.js - Aula 01 - Exercícios
 **user:** [delley](https://github.com/delley)
 **autor:** Francisco Oliveira
 **date:**
