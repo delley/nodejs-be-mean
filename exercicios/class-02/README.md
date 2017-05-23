@@ -50,6 +50,9 @@ A função `createServer` recebe uma função com dois parâmetros:
 
 ## 4. O que é e para que serve a Querystring?
 
+Querystring é uma parte da URL que contém um ou mais parâmetros e são passados no formato `chave=valor`.
+Querystring são usadas para passar dados (parâmetros) para o servidor através do método `GET`.
+
 ## 5. Escreva no código do `server.js` uma forma de entregar um JSON de sucesso em 4 rotas diferentes:
 
 
