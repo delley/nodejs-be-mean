@@ -76,7 +76,7 @@ const http = require('http')
 
     switch(url) {
       case '/api/create':
-	    case '/api/read':
+      case '/api/read':
       case '/api/update':
       case '/api/delete':
         SUCCESS.rota = url;
