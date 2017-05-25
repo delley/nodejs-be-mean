@@ -11,4 +11,5 @@ Arquivos do módulo Node.JS do curso [Be MEAN](https://github.com/Webschool-io/b
 * [Slides](https://docs.google.com/presentation/d/1_CHh_fTkzgxAnxB3MlZ5WRhTqMLViMk__jkCZiZ3IMA)
 * [Artigos](https://github.com/Webschool-io/be-mean-instagram-artigos)
 * [Exercícios](https://github.com/Webschool-io/be-mean-instagram-nodejs-exercises)
+* [Code Style](https://github.com/Webschool-io/be-mean/blob/master/Apostila/module-nodejs/pt-br/code-style.md)
 * [Clean Code JavaScript](https://github.com/Webschool-io/clean-code-javascript)
