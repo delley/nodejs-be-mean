@@ -3,10 +3,10 @@
 const http = require('http');
 
 http.get({
-    hostname: 'localhost'
-  , path: '/user?name=Suissa&teacher=true&age=31'
-  , port: 3000
-  , agent: false
+  hostname: 'localhost'
+, path: '/user?name=Suissa&teacher=true&age=31'
+, port: 3000
+, agent: false
 }, function (response) {
   let body = '';
   console.log('STATUS: ' + response.statusCode);
