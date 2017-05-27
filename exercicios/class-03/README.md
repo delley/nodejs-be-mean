@@ -41,7 +41,7 @@ Dados finalizados
 
 A API externa utilizada no exercício foi a [API de Consulta Tabela FIPE](http://fipeapi.appspot.com/).
 
-```
+```js
 'use strict'
 
 const http = require('http');
