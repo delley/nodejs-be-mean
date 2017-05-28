@@ -72,3 +72,23 @@ function calcula (n1, n2, callback) {
 
 calcula(2, 1, callback);
 ```
+
+# writeFile
+
+## 1. Utilizar como base o código do `fs.writeFile.cmd.js` para criar vários arquivos com nomes diferentes, porém com o mesmo conteúdo.
+```js
+const fs = require('fs');
+
+const file = process.argv[2] || 'arquivo01.txt';
+const data = process.argv[3] || 'Webschool é nois!';
+const callback = (err) => {
+  if (err) throw err;
+  console.log('Salvei async!');
+}
+const writer = () => {
+  file.split(',').forEach(f => fs.writeFile(f, data, callback));
+}
+
+writer();
+console.log('Final da execução!');
+```
